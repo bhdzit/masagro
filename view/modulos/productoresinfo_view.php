@@ -19,14 +19,28 @@
                     <div class="input-group col-auto mb-3">
                         <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fas fa-user"></i></span>
-                            </div><input readonly=""  type="text" class="form-control" name="" placeholder="Represetnante" value="Xxxxx Xxxxxx Xxxxxxx" >
+                            </div><input readonly=""  type="text" class="form-control" name="" placeholder="Nombre" value="Xxxxx Xxxxxx Xxxxxxx" >
                     </div>
 
+                    <div class="input-group col-auto mb-3">
+                        <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div><input readonly=""  type="text" class="form-control" name="" placeholder="Apellido Paterno" value="Xxxxx Xxxxxx Xxxxxxx" >
+                    </div>
+
+                    <div class="input-group col-auto mb-3">
+                        <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div><input readonly=""  type="text" class="form-control" name="" placeholder="Apellido Materno" value="Xxxxx Xxxxxx Xxxxxxx" >
+                    </div>
+
+
+               
 
                     <div class="input-group col-auto mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-location-arrow"></i></span>
-                        </div><input type="text"  readonly=""  value="Xxxxx Xxxxxx Xxxxxxx"  class="form-control"  placeholder="Direccion">
+                        </div><input type="mail"  readonly=""  value="Xxxxx Xxxxxx Xxxxxxx"  class="form-control"  placeholder="email">
                     </div>
 
 

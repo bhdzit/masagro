@@ -1,8 +1,8 @@
 
             <div class="row">
-
+            <div class="col-2 d-none d-md-block col-md-2 p-0">
            
-            <aside class="arb-maxagro-menu-cont col-2 d-none d-md-block col-md-2 p-0">
+            <aside id="arb-aside" class="arb-maxagro-menu-cont ">
                 <ul class="arb-maxagro-menu">
                 <li><a  href="noticias">Inicío</a></li>
                 <li><a href="informacion">Informacion</a></li>
@@ -13,14 +13,9 @@
                         <li><a href="inventario">Inventario</a></li>
                     </ul>
                 </li>
-                <li><a href="trampas_provedor">Trampas</a>
-                    <span id="trampas-submenue-span" onclick="setSubmenu('trampas-submenue-ul','trampas-submenue-span')" class="fas fa-sort-down" ></span></a>
-                    <ul id="trampas-submenue-ul" class="submenu">
-                        <li>Resumen</li>
-                    </ul>
-                </li>
-                <li><a href="ususarios">Usuarios</a></li>    
-                <li><a>Salir</a></li>
+                <li><a href="trampas">Trampas </li>
+                <li><a href="usuarios">Usuarios</a></li>    
+                <li><a href="/">Salir</a></li>
 
                 </ul>
 
@@ -39,3 +34,4 @@
                                     </div>
                
             </aside>
+        </div>

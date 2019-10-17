@@ -9,13 +9,13 @@ body{
 
   background-repeat: no-repeat;
   color: var(--color-bg-tres);
-  overflow:hidden;
+
 }
 header{
   border-bottom: 3px solid var(--color-bg-uno);
 }
 section{
-
+    color: #000;
     overflow: scroll;
 }
 aside{
@@ -73,6 +73,21 @@ tr:nth-child(even){
     display: block;
   } 
 
+}
+#arb-aside {
+    width: 16%;
+    position: fixed;
+    bottom: 0;
+    top: 12%;
+    left: 0;
+    overflow-y: scroll;
+    z-index: 1001;
+     background: var(--color-bg-dos);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);    
 }
 .arb-login-contaner{
   background: var(--color-bg-dos);
