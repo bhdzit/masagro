@@ -1,7 +1,7 @@
 <section class="row">
 			
 							<div class="col-0 col-sm-3 d-md-block col-md-4 p-0"></div>
-							<form class="arb-agro-login col-12 col-sm-6 d-md-block col-md-4 p-5 " id='form1' name='form1' action="noticias">
+							<form class="arb-agro-login col-12 col-sm-6 d-md-block col-md-4 p-5 mt-5 " id='form1' name='form1' action="noticias">
 								<center>
 									<div class="arb-login-contaner">
 								   <strong >
@@ -23,10 +23,10 @@
 								  </div>
 									<div>
 									
-									 <input type="submit" "  value="Enviar">
+									 <input type="submit"   value="Enviar">
 									</div>
 									<a href="#">¿Olvidaste tu contrasea?</a>
-									<input type="button" onclick="document.form1.action = 'registrarse.html'; document.form1.submit()" class="  " value="Crear Nueva Cuenta">
+									<input type="button" onclick="document.form1.action = 'registrarse'; document.form1.submit()" class="  " value="Crear Nueva Cuenta">
 									</div>
 								</center>
 								</form>

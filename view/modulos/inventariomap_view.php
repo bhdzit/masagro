@@ -7,7 +7,7 @@
     <span class="badge badge-primary mr-5">ID: LAITITUD ##.###</span>
 
 <div style="width: 100%; height: 350px;" id="mapContainer"></div>
-   <button class="btn btn-outline-primary m-3" type="button" >REGRESAR</button>
+   <a class="btn btn-outline-primary m-3" href="<?php echo SERVERURL ?>/inventario" >REGRESAR</a>
 	</center>
 
 </section>

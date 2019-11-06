@@ -1,4 +1,4 @@
-<section class="agromas_menu col-10 mt-3 ">
+<section class="agromas_menu col-10 p-5">
 	<center>
 		<h1>Usuarios Registrados <i class="ml-5 fas fa-file-pdf"></i></h1>
 		 <table class="table table-hover "  border="1" >

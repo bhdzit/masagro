@@ -6,11 +6,12 @@ function validarForm(){
 function modificarDatosEmpresa(){
 	var inputs=document.getElementsByTagName("input");
 	for(var i=0;i<inputs.length;i++){
-				inputs[i].removeAttribute("readonly", false);
-			console.log(inputs[i]);			
+		inputs[i].removeAttribute("readonly", false);
+		console.log(inputs[i]);			
 	}
 	document.getElementById("btnCancelar").removeAttribute("hidden",false);
-	document.getElementById("btnEnviar").innerText="Guardar";
+	document.getElementById("btnGurdar").removeAttribute("hidden",false);
+	document.getElementById("btnModificar").setAttribute("hidden",true);
 
 };
 function cancelarModificacion(){
@@ -20,8 +21,10 @@ function cancelarModificacion(){
 			console.log(inputs[i]);			
 	}
 	document.getElementById("btnCancelar").setAttribute("hidden",true);
-	document.getElementById("btnEnviar").innerText="Modificar";
+	document.getElementById("btnGuradar").setAttribute("hidden",true);
+	document.getElementById("btnModificar").removeAttribute("hidden",false);
 };
+
 function setSubmenu(ulsubmenu,ulspan){
 					
 					var submenu=document.getElementById(ulsubmenu);
@@ -37,3 +40,10 @@ function setSubmenu(ulsubmenu,ulspan){
 					}
 				
 };
+
+function showMenu(){
+    var fab=document.getElementById("arb-aside");
+    fab.style.marginLeft="100px";
+	console.log("sdasdasd");
+
+}

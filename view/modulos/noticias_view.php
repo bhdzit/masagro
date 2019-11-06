@@ -1,5 +1,5 @@
 
-            <section id="arb-menu-page" class="agromas_menu col-12 d-md-block col-md-10 p-3 m-0">
+            <section id="arb-menu-page" class="agromas_menu col-12 col-sm-12 d-block col-md-10  p-3">
                 <center>
                 <h1>Noticias</h1>
               <div id="carouselExampleControls" class=" col-12 carousel slide pointer-event" data-ride="carousel">

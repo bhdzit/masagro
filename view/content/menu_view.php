@@ -4,18 +4,18 @@
            
             <aside id="arb-aside" class="arb-maxagro-menu-cont ">
                 <ul class="arb-maxagro-menu">
-                <li><a  href="noticias">Inicío</a></li>
-                <li><a href="informacion">Informacion</a></li>
-                <li><a href="productores">Productores</a> 
+                <li><a  href="<?php echo SERVERURL ?>noticias">Inicío</a></li>
+                <li><a href="<?php echo SERVERURL ?>informacion">Informacion</a></li>
+                <li><a href="<?php echo SERVERURL ?>productores">Productores</a> 
                     <span id="agromas-submenue-span" onclick="setSubmenu('productores-submenue-ul','agromas-submenue-span')" class="fas fa-sort-down" ></span></a>
                     <ul id="productores-submenue-ul" class="submenu">
-                        <li><a href="productoresinfo">Informacion</a></li>
-                        <li><a href="inventario">Inventario</a></li>
+                        <li><a href="<?php echo SERVERURL ?>productoresinfo">Informacion</a></li>
+                        <li><a href="<?php echo SERVERURL ?>inventario">Inventario</a></li>
                     </ul>
                 </li>
-                <li><a href="trampas">Trampas </li>
-                <li><a href="usuarios">Usuarios</a></li>    
-                <li><a href="/">Salir</a></li>
+                <li><a href="<?php echo SERVERURL ?>trampas">Trampas </li>
+                <li><a href="<?php echo SERVERURL ?>usuarios">Usuarios</a></li>    
+                <li><a href="<?php echo SERVERURL ?>/">Salir</a></li>
 
                 </ul>
 

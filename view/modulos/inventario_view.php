@@ -26,28 +26,28 @@
             
             </tr>
              <tr class="fila_impar">
-                <td ><a href="inventariomap">#</a></td>
+                <td ><a href="<?php echo SERVERURL ?>inventariomap/01">#</a></td>
                 <td>##/##/####</td>
                 <td>INSTALADA</td>
                 <td>57.56</td>
                 <td>23.23</td>
             </tr>
                <tr>
-                <td ><a href="inventariomap">#</a></td>
+                <td ><a href="<?php echo SERVERURL ?>inventariomap/02">#</a></td>
                 <td>##/##/####</td>
                 <td>INSTALADA</td>
                 <td>57.56</td>
                 <td>23.23</td>
             </tr>
              <tr>
-                <td ><a href="inventariomap">#</a></td>
+                <td ><a href="<?php echo SERVERURL ?>inventariomap/03">#</a></td>
                 <td>##/##/####</td>
                 <td>INSTALADA</td>
                 <td>57.56</td>
                 <td>23.23</td>
             </tr>
              <tr>
-                <td ><a href="inventariomap">#</a></td>
+                <td ><a href="<?php echo SERVERURL ?>inventariomap/04">#</a></td>
                 <td>##/##/####</td>
                 <td>INSTALADA</td>
                 <td>57.56</td>

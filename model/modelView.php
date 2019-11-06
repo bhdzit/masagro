@@ -2,11 +2,32 @@
 class modelView{
 
 	protected function getModelViews($view){
-		$rutesarray=["noticias","informacion","productores","productoresinfo","inventario","trampas","usuarios","salir","inventariomap","login"];
+		$rutesarray=["noticias",
+		"informacion",
+		"productores",
+		"productoresinfo",
+		"inventario",
+		"trampas",
+		"usuarios",
+		"salir",
+		"inventariomap",
+		"passwordreset"];
 		if(in_array($view,$rutesarray)){
 			return "./view/modulos/".$view."_view.php";
 		}else{
-			return "404";
+			switch ($view) {
+				case 'registrarse':
+					return "registrarse";
+					break;
+					
+				case 'login':
+				return "login";
+				break;
+				
+				default:
+					return "404";
+				break;
+			}
 		}
 	
 	}	
