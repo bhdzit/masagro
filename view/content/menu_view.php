@@ -1,21 +1,47 @@
+<?php 
+    
+    $item=explode("/",$_GET[views]);
 
+?>
             <div class="row">
             <div class="col-2 d-none d-md-block col-md-2 p-0">
            
             <aside id="arb-aside" class="arb-maxagro-menu-cont ">
                 <ul class="arb-maxagro-menu">
-                <li><a  href="<?php echo SERVERURL ?>noticias">Inicío</a></li>
-                <li><a href="<?php echo SERVERURL ?>informacion">Informacion</a></li>
-                <li><a href="<?php echo SERVERURL ?>productores">Productores</a> 
-                    <span id="agromas-submenue-span" onclick="setSubmenu('productores-submenue-ul','agromas-submenue-span')" class="fas fa-sort-down" ></span></a>
-                    <ul id="productores-submenue-ul" class="submenu">
-                        <li><a href="<?php echo SERVERURL ?>productoresinfo">Informacion</a></li>
-                        <li><a href="<?php echo SERVERURL ?>inventario">Inventario</a></li>
+                <li class="arb-maxagro-menu-item<?php if($item[0]=="noticias") echo " li_active";?>"><a  href="<?php echo SERVERURL ?>noticias">Inicío</a></li>
+                <li class="arb-maxagro-menu-item <?php if($item[0]=="informacion") echo " li_active";?>"><a href="<?php echo SERVERURL ?>informacion">Informacion</a></li>
+                
+                <li onclick="setSubmenu('parcelas-submenue-ul','agromas-submenue-span')" class="arb-maxagro-menu-item <?php if($item[0]=="parcelas") echo " li_active";?>"><a href="<?php echo SERVERURL?>parcelas">parcelas</a>
+                    <span id="agromas-submenue-span"  class="fa fa-angle-left  pull-right-container" ></span>
+                    <ul id="parcelas-submenue-ul" class="submenu">
+                         <li class="arb-maxagro-menu-item"><a href="<?php echo SERVERURL ?>parcelasrep"><i class="fa fa-circle-o fa-xs"></i>Reporte</a></li>
                     </ul>
                 </li>
-                <li><a href="<?php echo SERVERURL ?>trampas">Trampas </li>
-                <li><a href="<?php echo SERVERURL ?>usuarios">Usuarios</a></li>    
-                <li><a href="<?php echo SERVERURL ?>/">Salir</a></li>
+
+                <li  onclick="setSubmenu('productores-submenue-ul','agromas-submenue-span')"  class="arb-maxagro-menu-item <?php if($item[0]=="productores") echo " li_active";?>"><a href="<?php echo SERVERURL ?>productores">Productores</a> 
+                    <span id="agromas-submenue-span"class="fa fa-angle-left pull-right-container" ></span>
+                    <ul id="productores-submenue-ul" class="submenu ">
+                        <li class="arb-maxagro-menu-item"><a href="<?php echo SERVERURL ?>productoresinfo"><i class="fa fa-circle-o fa-xs"></i>Informacion</a></li>
+                    </ul>
+                </li>
+
+                <li onclick="setSubmenu('trampas-submenue-ul','agromas-submenue-span')" class="arb-maxagro-menu-item <?php if($item[0]=="trampas") echo " li_active";?>"><a href="<?php echo SERVERURL ?>trampas">Trampas</a>
+                    <span id="agromas-submenue-span"  class="fa fa-angle-left pull-right-container" ></span>
+                     <ul id="trampas-submenue-ul" class="submenu">
+                        <li class="arb-maxagro-menu-item <?php if($item[0]=="usuarios") echo " li_active";?>"><a href="<?php echo SERVERURL ?>Instalar"><i class="fa fa-circle-o fa-xs"></i>Instalar</a></li>
+                        <li class="arb-maxagro-menu-item"><a href="<?php echo SERVERURL ?>Inventario"><i class="fa fa-circle-o fa-xs"></i>Inventario</a></li>
+                    </ul>
+                 </li>
+
+                <li onclick="setSubmenu('usu-submenue-ul','agromas-submenue-span')" class="arb-maxagro-menu-item"><a href="<?php echo SERVERURL ?>usuarios">Usuarios</a>
+                    <span id="agromas-submenue-span"  class="fa fa-angle-left pull-right-container" ></span>
+                    <ul id="usu-submenue-ul" class="submenu">
+                        <li class="arb-maxagro-menu-item"><a href="<?php echo SERVERURL ?>Instalar"><i class="fa fa-circle-o fa-xs"></i>Buscar</a></li>
+                        
+                    </ul>
+                </li> 
+
+                <li class="arb-maxagro-menu-item"><a href="<?php echo SERVERURL ?>/">Salir</a></li>
 
                 </ul>
 

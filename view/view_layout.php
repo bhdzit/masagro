@@ -9,11 +9,11 @@
 			require_once ("./controller/controllerView.php");
 			 $view= new controllerView();
 			 $rute=$view->getViewsController();
-			 echo $rute;
 			 if($rute!="login"&& $rute!="404"&& $rute!="registrarse"){
 
 			 include("./view/content/menu_view.php");
 			 require_once($rute);
+			 include("./view/content/footer_js.php");
 			 
 			 }else  {
 			 	switch ($rute) {

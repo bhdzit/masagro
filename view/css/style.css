@@ -3,15 +3,18 @@
 	--color-bg-uno:#bdbdbd;
   --color-bg-dos:#2d475f;
   --color-bg-tres:#fff;
+  --color-bg-cuatro:#405c75;
 
 }
 body{
 
-  background-repeat: no-repeat;
+   /*background-image: linear-gradient(to right, var(--color-bg-dos) , var(--color-bg-cuatro));*/
   color: var(--color-bg-tres);
 
 }
 header{
+  display: block;
+  background: #0f0;
   border-bottom: 3px solid var(--color-bg-uno);
 }
 section{
@@ -60,6 +63,7 @@ tr:nth-child(even){
 
   background-color: #2d475f4f}
 #arb-page{
+    
     background: var(--color-bg-dos);
     width: 50px;
     height: 50px;
@@ -79,6 +83,7 @@ tr:nth-child(even){
 
 }
 #arb-aside {
+  background: #fff;
     width: 16%;
     position: fixed;
     bottom: 0;
@@ -94,8 +99,22 @@ tr:nth-child(even){
     -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);    
 }
+@keyframes animationLogin{
+   0%   {  transform: rotateX(90deg); transform-origin: top center; }
+   100% { transform: rotateX(0deg);transform-origin: top center;}
+
+}
+@keyframes animationHideLogin{
+   from   {  transform: rotateX(0deg); transform-origin: top center; }
+   to { transform: rotateX(90deg);transform-origin: top center;}
+
+}
+.arb-agro-login {
+
+    border:1px solid #000;
+    animation-fill-mode: forwards;
+}
 .arb-login-contaner{
-  background: var(--color-bg-dos);
   border:1px solid #FFF;
   padding: 10% ;
   border-top-left-radius: 10px;
@@ -103,6 +122,19 @@ tr:nth-child(even){
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+
+.login-animation{
+  animation-name: animationLogin;
+  animation-duration: 2s;
+  
+}
+.hide-login{
+  animation-name: animationLogin;
+  animation-duration: 3s;
+    animation-direction: reverse;
+   animation-fill-mode: forwards;
+}
+
 .arb-login-contaner button{
   background: var(--color-bg-tres);
 }
@@ -128,32 +160,42 @@ tr:nth-child(even){
 .arb-maxagro-menu {
     list-style-type: none;
     width: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding:0;
     margin: 0;
     list-style:none;
     list-style-type: none;
   
 }
-.arb-maxagro-menu li{
-    margin: 35px 0 15px 0;
-    padding: 0 0 10px 0;
+.li_active{
+    padding: 16px;
+    background: var(--color-bg-cuatro);
+    border-left: 2px solid var(--color-bg-uno);
+}
+.arb-maxagro-menu-item {
+    padding: 16px 0 16px 0;
+      list-style:none;
+    list-style-type: none;
+}
+.arb-maxagro-menu-item a{
+  padding-left: 16px;
     list-style: none;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.5em;
     text-transform: uppercase;
-    text-align: center;
     letter-spacing: 2px;
-    border-bottom: 1px solid #000;
     color: #fff;
-    list-style:none;
-    list-style-type: none;
+  
+}
+.arb-maxagro-menu-item:hover
+{
+  background: var(--color-bg-cuatro);
 }
 .submenu{
    display: none;
    padding: 0;
-   border-left: 1px solid green; 
+   border-left: 1px solid green;
+   background: var(--color-bg-cuatro); 
 }
 .arb-footer ul li{
   list-style: none;
@@ -171,8 +213,44 @@ overflow: scroll;
     height: 100%;
     line-height: 4vw;
 }
+.toggle {
+      display: block;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 5%;
+    left: 50%;
+    border-radius: 50%;
+}
+.toggle:hover{
+  background: var( --color-bg-dos);
+}
 ::-webkit-scrollbar {
     width: 0px;
+}
+.bg-conteiner{
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.pull-right-container {
+    position: absolute;
+    right: 10px;
+
+}
+.bg-div{
+
+    
+    display: inline-block;
+    width: 1%;
+    height: 100vh;
+
+}
+.bg-div:hover{
+  background: var(--color-bg-uno);
+ 
 }
 /*body{
 	border: 0;

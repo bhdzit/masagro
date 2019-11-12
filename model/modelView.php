@@ -4,6 +4,8 @@ class modelView{
 	protected function getModelViews($view){
 		$rutesarray=["noticias",
 		"informacion",
+		"parcelas",
+		"parcelasrep",
 		"productores",
 		"productoresinfo",
 		"inventario",

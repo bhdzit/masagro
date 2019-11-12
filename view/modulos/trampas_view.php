@@ -1,6 +1,6 @@
 <section class="agromas_menu col-10  p-5 ">
 	<center>
-		<h1>Trampoas con Productor <i class="ml-5 fas fa-file-pdf"></i></h1>
+		<h1>Trampas con Productor <i class="ml-5 fas fa-file-pdf"></i></h1>
 
 <div class="btn-group">
   <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"

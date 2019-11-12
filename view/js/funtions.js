@@ -24,6 +24,16 @@ function cancelarModificacion(){
 	document.getElementById("btnGuradar").setAttribute("hidden",true);
 	document.getElementById("btnModificar").removeAttribute("hidden",false);
 };
+function evtModificationbtn(){
+	var btnModificar=document.getElementById("btnModificar");
+	btnModificar.classList.add("d-none");
+
+	var btnGuardar=document.getElementById("btnGuardar");
+	btnGuardar.classList.remove("d-none");
+
+	var btnCancelar=document.getElementById("btnCancelar");
+	btnCancelar.classList.remove("d-none");
+}
 
 function setSubmenu(ulsubmenu,ulspan){
 					
@@ -45,5 +55,33 @@ function showMenu(){
     var fab=document.getElementById("arb-aside");
     fab.style.marginLeft="100px";
 	console.log("sdasdasd");
+}
+
+var formlogin;
+var button ;
+function showLogin(){
+	
+	formlogin=document.getElementById("masagro-login");
+	formlogin.className ='arb-agro-login  col-12 col-sm-6 d-md-block col-md-4 d-none pt-5 pb-5 ';
+ 	button = document.getElementById("toggle");
+ 	button.innerHTML="<i class=\"fas fa-minus\"></i>";
+ 	button.onclick=hideLogin;
+	formlogin.style.WebkitAnimation = "animationLogin 2s 1";
+	formlogin.addEventListener("webkitAnimationEnd", myEndFunction);
+}
+function myEndFunction() {
+	//console.log(formlogin.style);
+	formlogin.style.WebkitAnimation="";
+	if(button.onclick===showLogin){
+		console.log("asdasdasd");
+		formlogin.className ="arb-agro-login d-none ";
+	}
+
+
+}
+function hideLogin(){
+	button.onclick=showLogin;
+	button.innerHTML= "<i class=\"fas fa-user\"></i>";
+	formlogin.style.WebkitAnimation = "animationHideLogin 2s 1";
 
 }

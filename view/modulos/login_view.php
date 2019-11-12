@@ -1,7 +1,15 @@
+					<div class="bg-conteiner">	
+						<?php 
+						for($i=0;$i<100;$i++){
+						echo	"<div class=\"bg-div\"></div>";
+					}?>
+							
+						</div>	
 <section class="row">
-			
+
 							<div class="col-0 col-sm-3 d-md-block col-md-4 p-0"></div>
-							<form class="arb-agro-login col-12 col-sm-6 d-md-block col-md-4 p-5 mt-5 " id='form1' name='form1' action="noticias">
+							<!--col-12 col-sm-6 d-md-block col-md-4-->
+							<form id="masagro-login" class="arb-agro-login  d-none" id='form1' name='form1' action="noticias">
 								<center>
 									<div class="arb-login-contaner">
 								   <strong >
@@ -30,7 +38,9 @@
 									</div>
 								</center>
 								</form>
+
 				
 			</section>
+			<button onclick="showLogin()" id="toggle" class="toggle i"><i class="fas fa-user"></i></button>
 		</div>
 	</div>
