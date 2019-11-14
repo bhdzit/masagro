@@ -6,23 +6,21 @@ function validarForm(){
 function modificarDatosEmpresa(){
 	var inputs=document.getElementsByTagName("input");
 	for(var i=0;i<inputs.length;i++){
-		inputs[i].removeAttribute("readonly", false);
-		console.log(inputs[i]);			
+		inputs[i].removeAttribute("readonly", false);	
 	}
 	document.getElementById("btnCancelar").removeAttribute("hidden",false);
-	document.getElementById("btnGurdar").removeAttribute("hidden",false);
+	document.getElementById("btnGuardar").removeAttribute("hidden",false);
 	document.getElementById("btnModificar").setAttribute("hidden",true);
 
 };
 function cancelarModificacion(){
 	var inputs=document.getElementsByTagName("input");
 	for(var i=0;i<inputs.length;i++){
-				inputs[i].setAttribute("readonly", true);
-			console.log(inputs[i]);			
+				inputs[i].setAttribute("readonly", true);		
 	}
 	document.getElementById("btnCancelar").setAttribute("hidden",true);
-	document.getElementById("btnGuradar").setAttribute("hidden",true);
-	document.getElementById("btnModificar").removeAttribute("hidden",false);
+	document.getElementById("btnGuardar").setAttribute("hidden",true);
+	document.getElementById("btnModificar").removeAttribute("hidden",true);
 };
 function evtModificationbtn(){
 	var btnModificar=document.getElementById("btnModificar");
@@ -66,7 +64,7 @@ function showOrHideMenu(fab){
 		}
 		else{
 
-			section[0].className="col-12"
+			section[0].className="agromas_menu col-12 p-3";
 			menu.className="d-none";
 			fab.style.left="0%";
 	 		fab.innerHTML="<i class=\"fas fa-arrow-right\"><i>";
@@ -106,5 +104,4 @@ function hideLogin(){
 	button.onclick=showLogin;
 	button.innerHTML= "<i class=\"fas fa-user\"></i>";
 	formlogin.style.WebkitAnimation = "animationHideLogin 2s 1";
-
 }

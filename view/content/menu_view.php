@@ -3,6 +3,8 @@
     $item=explode("/",$_GET[views]);
 
 ?>
+<div id="arb-page" onclick="showOrHideMenu(this)"> <a href="#" class="fas fa-bars "><i></i></a></div>
+<div id="arb-page-block" onclick="showOrHideMenu(this)"><i class="fas fa-arrow-left"></i></div>
             <div class="row">
             <div id="menu-contenier" class="col-2 d-none d-md-block col-md-2 p-0">
            
@@ -42,7 +44,7 @@
                     </ul>
                 </li> 
 
-                <li class="arb-maxagro-menu-item"><a href="<?php echo SERVERURL ?>/">Salir</a></li>
+                <li class="arb-maxagro-menu-item"><a href="<?php echo SERVERURL ?>">Salir</a></li>
 
                 </ul>
 

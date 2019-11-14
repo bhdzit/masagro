@@ -7,10 +7,15 @@
 
 }
 body{
-
-   /*background-image: linear-gradient(to right, var(--color-bg-dos) , var(--color-bg-cuatro));*/
-  color: var(--color-bg-tres);
-
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   
+    height: 100%;
+    color: var(--color-bg-tres);
+    padding: 0;
+    margin: 0;
+    background: #0f0;
+     background-image: linear-gradient(to right, var(--color-bg-dos) , var(--color-bg-cuatro));
+     background-size: cover;
 }
 header{
   display: block;
@@ -27,8 +32,9 @@ aside{
 .arb-maxagro-titel{
   width: 100%;
       position: fixed;
-    z-index: 2;
+ 
    background:var(--color-bg-dos);
+   min-height: 40px;
    max-height: 9%;
  }
 aside img{
@@ -77,6 +83,7 @@ tr:nth-child(even){
 }
 #arb-page-block{
     position: absolute;
+    top: 1%;
     left: 16%;
     background: var(--color-bg-dos);
     width: 18px;
@@ -122,7 +129,6 @@ tr:nth-child(even){
 }
 .arb-agro-login {
 
-    border:1px solid #000;
     animation-fill-mode: forwards;
 }
 .arb-login-contaner{
@@ -207,6 +213,9 @@ tr:nth-child(even){
    padding: 0;
    border-left: 1px solid green;
    background: var(--color-bg-cuatro); 
+}
+.submenu a{
+  display: block;
 }
 .arb-footer ul li{
   list-style: none;

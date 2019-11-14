@@ -3,11 +3,11 @@
 
 class db{
 
-	public function dbConnection(){
+	protected function dbConnection(){
 		$mysqlconn= new mysqli("127.0.0.1", "bhdz", "IT25697", "masAgro");
 		return $mysqlconn;
 	}
-	public function getQuery($sql){
+	protected function getQuery($sql){
 	$mysqli = self::dbConnection(); 
 		try{
 			$queryres=$mysqli->query($sql)->fetch_assoc();
@@ -17,5 +17,12 @@ class db{
 			return "Error en la base de datos";
 		}
 		return $queryres;
+	}
+	protected function executeQuery($sql){
+		echo("arg1");
+		$mysqli = self::dbConnection(); 
+		$mysqli->query($sql);
+
+
 	}
 }

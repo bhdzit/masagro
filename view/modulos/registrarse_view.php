@@ -7,99 +7,77 @@
        
         <form   id="informacion" method="post" action="./ajax/registrateUser.php">
 
+
+			<div class="form-row">
+				<div class="input-group mb-3 input-group-sm form-group col-6">
+					    <div class="input-group-prepend">
+					       <span class="input-group-text ti-user "><i class="fas fa-building"></i></span>
+					    </div>
+					<input type="text" class="form-control " placeholder="RFC" name="rfc">
+				</div>
+
+
+				<div class="input-group mb-3 input-group-sm form-group col-6">
+					    <div class="input-group-prepend">
+					       <span class="input-group-text ti-user "><i class="fas fa-building"></i></span>
+					    </div>
+					<input type="text" class="form-control " placeholder="Razon Social">
+				</div>
+			</div>
+
         	<div class="form-row">
-							<div class="input-group mb-3 input-group-sm form-group col-6">
-							     <div class="input-group-prepend">
-							       <span class="input-group-text ti-user "><i class="far fa-user"></i></span>
-							    </div>
-					      <input type="text" class="form-control " id="arb-reg-nom" placeholder="Usuario">
-					   </div>
-
-					   	<div class="input-group mb-3 input-group-sm form-group col-6">
-					    <div class="input-group-prepend">
-					       <span class="input-group-text ti-user "><i class="fas fa-at"></i></span>
-					    </div>
-					<input type="text" class="form-control " id="arb-reg-nom" placeholder="Correo">
-				</div>
-			</div>
-
-			<div class="form-row">
 				<div class="input-group mb-3 input-group-sm form-group col-6">
 					    <div class="input-group-prepend">
-					       <span class="input-group-text ti-user "><i class="fas fa-unlock-alt"></i></span>
+					       <span class="input-group-text ti-user "><i class="fas fa-user"></i></span>
 					    </div>
-					<input type="text" class="form-control " id="arb-reg-nom" placeholder="contraseña">
+					<input type="text" class="form-control " placeholder="Nombre">
 				</div>
 
 					<div class="input-group mb-3 input-group-sm form-group col-6">
 					    <div class="input-group-prepend">
-					       <span class="input-group-text ti-user "><i class="fas fa-unlock-alt"></i></span>
+					       <span class="input-group-text ti-user "><i class="fas fa-user"></i></span>
 					    </div>
-					<input type="text" class="form-control " id="arb-reg-nom" placeholder="Confirmar Contraseña">
+					<input type="text" class="form-control " placeholder="Apellido Paterno">
 				</div>
 
 
 			</div>
 
-			<div class="form-row">
-				<div class="input-group mb-3 input-group-sm form-group col-6">
-					    <div class="input-group-prepend">
-					       <span class="input-group-text ti-user "><i class="fas fa-building"></i></span>
-					    </div>
-					<input type="text" class="form-control " id="arb-reg-nom" placeholder="RFC">
-				</div>
+		
 
-
-				<div class="input-group mb-3 input-group-sm form-group col-6">
-					    <div class="input-group-prepend">
-					       <span class="input-group-text ti-user "><i class="fas fa-building"></i></span>
-					    </div>
-					<input type="text" class="form-control " id="arb-reg-nom" placeholder="Razon Social">
-				</div>
-			</div>
 			
 
 
 
 			<div class="form-row">
-				<div class="input-group mb-3 input-group-sm form-group col-6">
-					    <div class="input-group-prepend">
-					       <span class="input-group-text ti-user "><i class="fas fa-user"></i></span>
-					    </div>
-					<input type="text" class="form-control " id="arb-reg-nom" placeholder="Apellido Paterno">
-				</div>
-
-					<div class="input-group mb-3 input-group-sm form-group col-6">
-					    <div class="input-group-prepend">
-					       <span class="input-group-text ti-user "><i class="fas fa-user"></i></span>
-					    </div>
-					<input type="text" class="form-control " id="arb-reg-nom" placeholder="Apellido Materno">
-				</div>
-
-			</div>
-
 			
-			<div class="form-row">
-				<div class="input-group mb-3 input-group-sm form-group col-6">
+
+					<div class="input-group mb-3 input-group-sm form-group col-6">
 					    <div class="input-group-prepend">
 					       <span class="input-group-text ti-user "><i class="fas fa-user"></i></span>
 					    </div>
-					<input type="text" class="form-control " id="arb-reg-nom" placeholder="Nombre">
+					<input type="text" class="form-control " placeholder="Apellido Materno">
 				</div>
 
-					<div class="input-group mb-3 input-group-sm form-group col-6">
+				<div class="input-group mb-3 input-group-sm form-group col-6">
 					    <div class="input-group-prepend">
 					       <span class="input-group-text ti-user "><i class="fas fa-phone"></i></span>
 					    </div>
-					<input type="text" class="form-control " id="arb-reg-nom" placeholder="Telefono">
+					<input type="text" class="form-control " placeholder="Telefono">
 				</div>
+
 			</div>
 
 			
-			
-			
 			<div class="form-row">
-				<div class="input-group mb-3 input-group-sm form-group col-4">
+						   	<div class="input-group mb-3 input-group-sm form-group col-6">
+					<div class="input-group-prepend">
+					   <span class="input-group-text ti-user "><i class="fas fa-at"></i></span>
+				    </div>
+					<input type="text" class="form-control " placeholder="Correo">
+				</div>
+
+				<div class="input-group mb-3 input-group-sm form-group col-6">
 					    <div class="input-group-prepend">
 					       <span class="input-group-text ti-user "><i class="fas fa-user-tag"></i></span>
 					    </div>
@@ -108,21 +86,44 @@
 		            <option value="Usuario" >Usuario</option>
 	             </select>
 				</div>
+
+					
+			</div>
+
+				<div class="form-row">
+				<div class="input-group mb-3 input-group-sm form-group col-6">
+					    <div class="input-group-prepend">
+					       <span class="input-group-text ti-user "><i class="fas fa-unlock-alt"></i></span>
+					    </div>
+					<input type="text" class="form-control " placeholder="contraseña">
+				</div>
+
+					<div class="input-group mb-3 input-group-sm form-group col-6">
+					    <div class="input-group-prepend">
+					       <span class="input-group-text ti-user "><i class="fas fa-unlock-alt"></i></span>
+					    </div>
+					<input type="text" class="form-control " placeholder="Confirmar Contraseña">
+				</div>
+
+
+			</div> 
+			
+			
+			
+			<div class="form-row">
+				
 					
 
 				<div class="input-group mb-3 input-group-sm form-group col-4">
-					   <input type="submit"  value="Enviar" /></tr>
+					   <input type="submit"  value="Enviar" />
 				</div>
 				<div class="input-group mb-3 input-group-sm form-group col-4" >
-						<a href="<?php echo SERVERURL?>" style="color: #2d475f; width: 100%;"><i class="fas fa-undo-alt"></i> regresar</a>
-					</div>
+					<a href="<?php echo SERVERURL?>" style="color: #2d475f; width: 100%;"><i class="fas fa-undo-alt"></i> regresar</a>
+				</div>
 
 			</div>
-                  
+                 
 			
-			<div class="form-row">
-			
-			</div>
        
             
             </form>
@@ -130,3 +131,20 @@
 </div>
 
 </section>
+<script type="text/javascript">
+	/*$(function() {
+	    // Get the form.
+	    var form = $('#informacion');
+
+	    // Get the messages div.
+	    var formMessages = $('#form-messages');
+		$(form).submit(function(event) {
+	    // Stop the browser from submitting the form.
+	    event.preventDefault();
+	    var formData = $(form).serialize();
+	    alert(formData);
+		});
+	
+	});
+*/
+</script>

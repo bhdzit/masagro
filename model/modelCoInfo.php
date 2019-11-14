@@ -1,9 +1,9 @@
 <?php
 require_once "./core/db.php";
-class modelCoInfo{
+class modelCoInfo extends db{
 	public function getcoInfo(){
 		$db=new db();
-		$res=$db->getQuery("select * from `empresa`;");
+		$res=db::getQuery("select * from `empresa`;");
 		return $res;
 	}
 }

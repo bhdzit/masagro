@@ -5,11 +5,11 @@ $controller=new contreollercoInfo();
 $res=$controller->getInformation();
 ?>
 
-<section class=" agromas_menu col-sm-12 d-md-block col-md-10   p-3 bg-warning">
+<section class=" agromas_menu col-sm-12 d-md-block col-md-10   p-3 ">
 				<center>
 
                     <h1>Informacion</h1>
-				<form class="form-productores m-0 p-5" action="#" onsubmit="return false;"  >
+				<form id="infoForm" name="infoForm" class="form-productores m-0 p-5" action="#" onsubmit="return false;"  >
 		
 					<br>
                     <div class="input-group col-auto mb-3">
@@ -40,7 +40,7 @@ $res=$controller->getInformation();
                       <input type="phone" class="form-control" readonly=""  name=""  value="<?php echo $res["em_tel"];?>" placeholder="Telefono">
                   </div>
 					<button id="btnCancelar"   onclick="cancelarModificacion()" hidden="">Cancelar</button>
-                    <button id="btnGurdar" type="submit" hidden="">Guardar</button>
+                    <button id="btnGuardar" type="submit" onclick="document.infoForm.action='registrarse'; document.infoForm.submit()" hidden="">Guardar</button>
 					<button id="btnModificar"  onclick="modificarDatosEmpresa()" >Modificar</button>
 
 				</form>			
