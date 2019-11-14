@@ -1,4 +1,4 @@
-<section class="agromas_menu col-10  p-0">
+<section class="agromas_menu col-10  p-5">
 	<center>
 		<h1>Informacion de la Parcela</h1>
 		<form action="404.php" onsubmit="return false;">
@@ -75,11 +75,11 @@
 
 				<div class="input-group mb-3 input-group-sm form-group col-2">
 				
-					<button id="btnGuardar" class="btn btn-block btn-primary " onclick="evtSafebtn()">Guardar</button>	  
+					<button id="btnGuardar" class="btn-block" onclick="evtSafebtn()">Guardar</button>	  
 			   </div>
 
 			   	<div class="input-group mb-3 input-group-sm form-group col-2">
-					<button id="btnCancelar"class="btn btn-block btn-primary " onclick="evtancelbtn()">Cancelar</button>	  
+					<button id="btnCancelar"  class="btn-block" onclick="evtancelbtn()">Cancelar</button>	  
 			   </div>
 			</div>
 		</form>

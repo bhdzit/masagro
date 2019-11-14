@@ -5,7 +5,7 @@ $controller=new contreollercoInfo();
 $res=$controller->getInformation();
 ?>
 
-<section class=" agromas_menu col-sm-12 d-md-block col-md-10   p-3">
+<section class=" agromas_menu col-sm-12 d-md-block col-md-10   p-3 bg-warning">
 				<center>
 
                     <h1>Informacion</h1>

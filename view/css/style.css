@@ -1,7 +1,7 @@
 :root{
 
 	--color-bg-uno:#bdbdbd;
-  --color-bg-dos:#2d475f;
+  --color-bg-dos:#1b2e3f;
   --color-bg-tres:#fff;
   --color-bg-cuatro:#405c75;
 
@@ -31,10 +31,9 @@ aside{
    background:var(--color-bg-dos);
    max-height: 9%;
  }
-.arb-maxagro-titel img{
-height: 30px;
-width: auto;
-max-height: 5%;
+aside img{
+width: 100%;
+
 top: 10px;
 }
 
@@ -76,10 +75,22 @@ tr:nth-child(even){
     display: none;
 
 }
+#arb-page-block{
+    position: absolute;
+    left: 16%;
+    background: var(--color-bg-dos);
+    width: 18px;
+    height: 30px;
+    line-height: 2vw;
+    z-index: 1;
+}
 @media screen and (max-width: 768px){
   #arb-page{
     display: block;
   } 
+  #arb-page-block{
+    display: none;
+  }
 
 }
 #arb-aside {
@@ -88,7 +99,7 @@ tr:nth-child(even){
     position: fixed;
     bottom: 0;
     top: 0;
-    padding-top: 5%;
+    padding-top: 1%;
     left: 0;
     overflow-y: scroll;
     z-index: 1;

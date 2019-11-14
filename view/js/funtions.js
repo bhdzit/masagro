@@ -51,11 +51,34 @@ function setSubmenu(ulsubmenu,ulspan){
 				
 };
 
-function showMenu(){
-    var fab=document.getElementById("arb-aside");
-    fab.style.marginLeft="100px";
-	console.log("sdasdasd");
+
+function showOrHideMenu(fab){
+	
+	var menu=document.getElementById("menu-contenier");
+	var section=document.getElementsByTagName("section");
+	if(fab.id==="arb-page-block"){
+		if(menu.className==="d-none"){
+			
+			section[0].className="agromas_menu col-sm-12 d-md-block col-md-10   p-3";
+ 			menu.className="col-2 d-none d-md-block col-md-2 p-0";
+ 			fab.style.left="16%";
+			fab.innerHTML="<i class=\"fas fa-arrow-left\"><i>";
+		}
+		else{
+
+			section[0].className="col-12"
+			menu.className="d-none";
+			fab.style.left="0%";
+	 		fab.innerHTML="<i class=\"fas fa-arrow-right\"><i>";
+		}
+
+	}
+	else{
+		menu.className="col-10 flex";
+	}
 }
+
+
 
 var formlogin;
 var button ;

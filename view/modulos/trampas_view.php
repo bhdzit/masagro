@@ -87,9 +87,9 @@ var animatedSvg =
 
 // Create an icon object, an object with geographic coordinates and a marker:
 var icon = new H.map.DomIcon(animatedSvg),
-  coords = {lat: 20.2964255, lng: -99.1971307},
+  coords = {lat:<?php echo 20.2964255?>, lng: <?php echo -99.1971307},
   marker = new H.map.DomMarker(coords, {icon: icon});
 // Add the marker to the map:
 map.addObject(marker);
-                 
+
   </script>

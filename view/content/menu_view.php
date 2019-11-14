@@ -4,9 +4,10 @@
 
 ?>
             <div class="row">
-            <div class="col-2 d-none d-md-block col-md-2 p-0">
+            <div id="menu-contenier" class="col-2 d-none d-md-block col-md-2 p-0">
            
             <aside id="arb-aside" class="arb-maxagro-menu-cont ">
+                <img src="./view/img/MasAgro.png">
                 <ul class="arb-maxagro-menu">
                 <li class="arb-maxagro-menu-item<?php if($item[0]=="noticias") echo " li_active";?>"><a  href="<?php echo SERVERURL ?>noticias">Inicío</a></li>
                 <li class="arb-maxagro-menu-item <?php if($item[0]=="informacion") echo " li_active";?>"><a href="<?php echo SERVERURL ?>informacion">Informacion</a></li>
