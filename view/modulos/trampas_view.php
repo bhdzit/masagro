@@ -1,27 +1,83 @@
-<section class="agromas_menu col-10  p-5 ">
+<section class="agromas_menu col-10   ">
 	<center>
-		<h1>Trampas con Productor <i class="ml-5 fas fa-file-pdf"></i></h1>
-
-<div class="btn-group">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-    aria-expanded="false">
-    Productor
-  </button>
-  <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 38px, 0px);">
-    <a class="dropdown-item" href="todos">Todos</a>
-    <a class="dropdown-item" href="productor1">Productor 1</a>
-    <a class="dropdown-item" href="productor1">Productor 2</a>
-    <a class="dropdown-item" href="productor1">Productor 3</a>
-    <a class="dropdown-item" href="productor1">Productor 4</a>
-  </div>
-
-</div>
-  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-    aria-expanded="false">
-  Reporte
-  </button>
+		<h1>Ubicacion de las trampas del productor <i class="ml-5 fas fa-file-pdf"></i></h1>
+                      <div class="form-row m-2  ">
+          <select class="custom-select">
+            <option selected>Todos</option>
+            <option value="1">Productor 1</option>
+            <option value="2">Productor 2</option>
+            <option value="3">Productor 3</option>
+          </select>
+      </div>
 <div style="width: 100%; height: 350px;" id="mapContainer"></div>
 
+  <div class="card">
+  <div class="card-header">
+  Datos de la Trampa
+  </div>
+  <div class="card-body form-row">
+      <div class="col-8">
+      <div class="form-row">
+        
+        <div class="input-group mb-3 input-group-sm form-group col-6">
+              <div class="input-group-prepend">
+                 <span class="input-group-text ti-user "><i class="fas fa-fingerprint"></i></span>
+              </div>
+          <input type="text" class="form-control "  name="ID" placeholder="id">
+        </div>
+
+  <div class="input-group mb-3 input-group-sm form-group col-6">
+                   <div class="input-group-prepend">
+                     <span class="input-group-text ti-user "><i class="fas fa-location-arrow"></i></span>
+                  </div>
+                <input type="text" class="form-control " id="arb-reg-nom" placeholder="Latitud">
+             </div>
+
+          
+    </div>
+
+
+    <div class="form-row">
+          <div class="input-group mb-3 input-group-sm form-group col-6">
+                   <div class="input-group-prepend">
+                     <span class="input-group-text ti-user "><i class="fas fa-calendar-minus"></i></span>
+                  </div>
+                <input type="text" class="form-control " id="arb-reg-nom" placeholder="Fecha">
+             </div>
+
+
+
+           <div class="input-group mb-3 input-group-sm form-group col-6">
+              <div class="input-group-prepend">
+                 <span class="input-group-text ti-user "><i class="fas fa-location-arrow"></i></span>
+              </div>
+          <input type="text" class="form-control " id="arb-reg-nom" placeholder="Longitud">
+        </div>
+
+        
+    </div>
+  </div>
+          <div class="col-4">
+                  <div class="form-row">
+                     <div class="input-group mb-3 input-group-sm form-group col-12">
+                        <div class="input-group-prepend">
+                           <span class="input-group-text ti-user "><i class="fas fa-location-arrow"></i></span>
+                        </div>
+                    <input type="text" class="form-control " id="arb-reg-nom" placeholder="Mariposas Atrapadas">
+                  </div>
+                  </div>
+                    <div class="form-row">
+                    <div class="input-group mb-3 input-group-sm form-group col-6">
+                     <button class="btn btn-block btn-warning">Reoporte</button>
+                   </div>
+                     <div class="input-group mb-3 input-group-sm form-group col-6">
+                     <button class="btn btn-block btn-warning">Desisntalar</button>
+                  </div>
+                </div>
+                          
+         </div>
+    </div>
+</div>  
 	</center>
 </section>
 
@@ -61,35 +117,5 @@ window.onload = function () {
   moveMapToBerlin(map);
 }  
 
-var animatedSvg =
-  '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" ' + 
-  'y="0px" style="margin:-112px 0 0 -32px" width="136px"' + 
-  'height="150px" viewBox="0 0 136 150"><ellipse fill="#000" ' +
-  'cx="32" cy="128" rx="36" ry="4"><animate attributeName="cx" ' + 
-  'from="32" to="32" begin="0s" dur="1.5s" values="96;32;96" ' + 
-  'keySplines=".6 .1 .8 .1; .1 .8 .1 1" keyTimes="0;0.4;1"' + 
-  'calcMode="spline" repeatCount="indefinite"/>' +  
-  '<animate attributeName="rx" from="36" to="36" begin="0s"' +
-  'dur="1.5s" values="36;10;36" keySplines=".6 .0 .8 .0; .0 .8 .0 1"' + 
-  'keyTimes="0;0.4;1" calcMode="spline" repeatCount="indefinite"/>' +
-  '<animate attributeName="opacity" from=".2" to=".2"  begin="0s" ' +
-  ' dur="1.5s" values=".1;.7;.1" keySplines=" .6.0 .8 .0; .0 .8 .0 1" ' +
-  'keyTimes=" 0;0.4;1" calcMode="spline" ' +
-  'repeatCount="indefinite"/></ellipse><ellipse fill="#1b468d" ' +
-  'cx="26" cy="20" rx="16" ry="12"><animate attributeName="cy" ' +
-  'from="20" to="20" begin="0s" dur="1.5s" values="20;112;20" ' +
-  'keySplines=".6 .1 .8 .1; .1 .8 .1 1" keyTimes=" 0;0.4;1" ' +
-  'calcMode="spline" repeatCount="indefinite"/> ' +
-  '<animate attributeName="ry" from="16" to="16" begin="0s" ' + 
-  'dur="1.5s" values="16;12;16" keySplines=".6 .0 .8 .0; .0 .8 .0 1" ' +
-  'keyTimes="0;0.4;1" calcMode="spline" ' +
-  'repeatCount="indefinite"/></ellipse></svg>';
-
-// Create an icon object, an object with geographic coordinates and a marker:
-var icon = new H.map.DomIcon(animatedSvg),
-  coords = {lat:<?php echo 20.2964255?>, lng: <?php echo -99.1971307},
-  marker = new H.map.DomMarker(coords, {icon: icon});
-// Add the marker to the map:
-map.addObject(marker);
 
   </script>

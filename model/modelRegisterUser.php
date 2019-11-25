@@ -2,10 +2,29 @@
 require_once("../core/db.php");
 class modelRegisterUser extends db{
 
-	public  function setNewUser(){
-
+	public  function setNewUser($json){
 		$db=new db();
-		$db::executeQuery("insert into `usuario` values(1002,\"rene\",\"12345\",\"RENE010101010\",\"Rene Bautista\",\"Rene\",\"Ivan\",\"Bautista\",7713814046,\"rene@gmail.com\",1)");
-	}
+		$a="sdasdasd";
+		$bool=$db::executeQuery("insert into `ma_user_info` 
+			values(null,
+			'".$json->{"rfc"}."',
+			'".$json->{"business_name"}."',
+			'".$json->{"name"}."',
+			'".$json->{"last_name"}."',
+			'".$json->{"sec_last_name"}."',
+			'".$json->{"mail"}."',
+			'".$json->{"role"}."',
+			'".$json->{"password"}."',
+			'".$json->{"phone"}."');
+
+
+
+			");
+		if($bool){
+			echo "Se Inserto Registro C0rectamente";
+		}
+		else
+			echo "No se pudo registrar el usuario";
+		}
 
 } 

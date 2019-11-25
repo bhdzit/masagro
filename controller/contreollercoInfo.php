@@ -8,7 +8,7 @@ class contreollercoInfo extends modelCoInfo{
 		return $info=modelCoInfo::getcoInfo();
 	}
 	public function updateInfo(){
-		echo "string";
+	
 	}
 
 

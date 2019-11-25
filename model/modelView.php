@@ -2,14 +2,21 @@
 class modelView{
 
 	protected function getModelViews($view){
+
+
+
+
 		$rutesarray=["noticias",
 		"informacion",
 		"parcelas",
 		"parcelasrep",
+		"parcelasreg",
 		"productores",
 		"productoresinfo",
 		"inventario",
 		"trampas",
+		"instalartrampa",
+		"inventariotrampas",
 		"usuarios",
 		"salir",
 		"inventariomap",
@@ -25,6 +32,8 @@ class modelView{
 				case 'login':
 				return "login";
 				break;
+				case 'logout':
+					return 'logout';
 				
 				default:
 					return "404";

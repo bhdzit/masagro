@@ -1,9 +1,9 @@
 :root{
 
 	--color-bg-uno:#bdbdbd;
-  --color-bg-dos:#1b2e3f;
+  --color-bg-dos:#343a40;
   --color-bg-tres:#fff;
-  --color-bg-cuatro:#405c75;
+  --color-bg-cuatro:#838688;
 
 }
 body{
@@ -13,9 +13,14 @@ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: var(--color-bg-tres);
     padding: 0;
     margin: 0;
-    background: #0f0;
+    background: url("../img/maiz.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    /*background: #0f0;
      background-image: linear-gradient(to right, var(--color-bg-dos) , var(--color-bg-cuatro));
-     background-size: cover;
+    */ background-size: cover;
 }
 header{
   display: block;
@@ -31,8 +36,8 @@ aside{
 }
 .arb-maxagro-titel{
   width: 100%;
-      position: fixed;
- 
+  position: fixed;
+  z-index: 1;
    background:var(--color-bg-dos);
    min-height: 40px;
    max-height: 9%;
@@ -58,11 +63,11 @@ input,button{
 }
 th{
   color:#fff;
-  background: var(--color-bg-dos);
+ /* background: var(--color-bg-dos);*/
 }
 tr{
 color:#fff;
-  background:  var(--color-bg-dos);
+  background:  var(--color-bg-uno);
 }
 tr:nth-child(even){
 
@@ -72,8 +77,9 @@ tr:nth-child(even){
     background: var(--color-bg-dos);
     width: 50px;
     height: 50px;
+    top: 5%;
     border-radius: 50%;
-    position: absolute;
+    position: fixed;
     line-height: 50px;
     text-align: center;
     z-index: 1;
@@ -82,7 +88,7 @@ tr:nth-child(even){
 
 }
 #arb-page-block{
-    position: absolute;
+    position: fixed;
     top: 1%;
     left: 16%;
     background: var(--color-bg-dos);
@@ -109,7 +115,7 @@ tr:nth-child(even){
     padding-top: 1%;
     left: 0;
     overflow-y: scroll;
-    z-index: 1;
+    z-index: 2;
      background: var(--color-bg-dos);
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
@@ -132,12 +138,14 @@ tr:nth-child(even){
     animation-fill-mode: forwards;
 }
 .arb-login-contaner{
-  border:1px solid #FFF;
-  padding: 10% ;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+ background: var(--color-bg-dos);
+    border: 1px solid #FFF;
+    padding: 10%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #fff;
 }
 
 .login-animation{
@@ -211,7 +219,7 @@ tr:nth-child(even){
 .submenu{
    display: none;
    padding: 0;
-   border-left: 1px solid green;
+   border-left: 2px solid #000;
    background: var(--color-bg-cuatro); 
 }
 .submenu a{

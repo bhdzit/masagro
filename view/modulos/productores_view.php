@@ -1,4 +1,4 @@
- <section class="agromas_menu col-10  p-5 table-responsive">
+ <section class="agromas_menu col-10 table-responsive">
                <center>
                 <h1>Productores</h1>
         <table class="table table-hover "  border="1" >

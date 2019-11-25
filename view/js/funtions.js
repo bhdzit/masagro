@@ -51,7 +51,7 @@ function setSubmenu(ulsubmenu,ulspan){
 
 
 function showOrHideMenu(fab){
-	
+	var menuContenier=document.getElementById("arb-aside");
 	var menu=document.getElementById("menu-contenier");
 	var section=document.getElementsByTagName("section");
 	if(fab.id==="arb-page-block"){
@@ -72,6 +72,7 @@ function showOrHideMenu(fab){
 
 	}
 	else{
+		menuContenier.style.width="60%";
 		menu.className="col-10 flex";
 	}
 }
