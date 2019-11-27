@@ -10,7 +10,7 @@
 		$sess->createSession("login_sesion");
 		$sess->setValue("usu",$_POST["usu"]);
 		$sess->setValue("pass",$_POST["pass"]);
-		$sess->setValue("role",$res["ma_usu_rolse_role"]);
+		$sess->setValue("role",$res["ma_usu_role_name"]);
 		echo "1";
 		}
 		else{
@@ -20,8 +20,7 @@
 		
 		}
 
-		public function eraseLogin(){
 	
-		}
+
 	}
 ?>

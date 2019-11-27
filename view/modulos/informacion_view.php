@@ -12,6 +12,7 @@ $res=$controller->getInformation();
 				<form id="infoForm" name="infoForm" class="form-productores m-0 p-5" action="./ajax/updateInfo.php" onsubmit="return false;" method="post"  >
 		
 					<br>
+                    <input hidden="" type="" name="id_info" value="<?php echo $res["ma_user_id"]?>">
                     <div class="input-group col-auto mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-building"></i></span>

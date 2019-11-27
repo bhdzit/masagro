@@ -52,6 +52,7 @@
 
 		})
 		.done(function(res){
+			alert(res);
 			if(res==="2"){
 				alert_pass.classList.remove("d-none");
 			}

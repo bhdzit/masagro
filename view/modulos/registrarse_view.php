@@ -92,8 +92,9 @@
 				
 
 				 <select class="form-control" name="role">
-		            <option value="1">Productor</option>
-		            <option value="2" >Usuario</option>
+				 	<option value="1">Admin</option>
+		            <option value="2">Productor</option>
+		            <option value="3" >Usuario</option>
 	             </select>
 				</div>
 
