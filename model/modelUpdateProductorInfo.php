@@ -1,7 +1,7 @@
 <?php
 	require("../core/db.php");
 	
-	class modelUpdateProductorInfo{
+	class modelUpdateProductorInfo extends db{
 		public function  updateProductorInfo($json){
 
 			$db=new db();
@@ -13,9 +13,9 @@
 			"ma_usu_sec_last_name=\"".$json->{"info_sec_last_name"}."\",".
 			"ma_usu_mail=\"".$json->{"info_mail"}."\",".
 			"ma_usu_tel=\"".$json->{"info_tel"}."\" ".
-			"where ma_user_id=\"".$json->{"info_id"}."\";";
-			echo ($sql);
-		/*	$bool=$db::executeQuery($sql);
+			"where ma_user_id=".$json->{"info_id"}.";";
+			//echo ($sql);
+			$bool=$db::executeQuery($sql);
 				if($bool){
 					//echo $bool;
 					echo "Se Actualizo Registro Corectamente";
@@ -23,6 +23,6 @@
 				else{
 					echo "No se pudo Actualizar registrar el usuario";
 
-			}*/
+			}
 		}
 	}

@@ -79,8 +79,9 @@ $res=$controller->getProductorInfo($item[1]);
             data:$("#ProductorinfoForm").serialize()
         })
         .done(function(res){
-            alert(res);
-           location.reload();
+            //  console.log(res);
+
+          location.reload();
         });
     }    
     </script>
