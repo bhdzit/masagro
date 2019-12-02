@@ -41,7 +41,7 @@
                 <li onclick="setSubmenu('usu-submenue-ul','agromas-submenue-span')" class="arb-maxagro-menu-item"><a href="<?php echo SERVERURL ?>usuarios">Usuarios</a>
                     <span id="agromas-submenue-span"  class="fa fa-angle-left pull-right-container" ></span>
                     <ul id="usu-submenue-ul" class="submenu">
-                        <li class="arb-maxagro-menu-item"><a href="<?php echo SERVERURL ?>Instalar"><i class="fa fa-circle-o fa-xs"></i>Buscar</a></li>
+                        <li class="arb-maxagro-menu-item"><a href="<?php echo SERVERURL ?>buscar"><i class="fa fa-circle-o fa-xs"></i>Buscar</a></li>
                         
                     </ul>
                 </li> 

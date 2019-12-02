@@ -5,7 +5,7 @@
 			$db=new db();
 			session_name("login_sesion");
 			session_start();
-			$res=db::getQuery("select * from `ma_user_info` where ma_usu_role=2;");
+			$res=db::getQuery("select * from `ma_user_info` where ma_usu_roles_id =2;");
 		return $res;
 		}
 

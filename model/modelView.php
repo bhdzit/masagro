@@ -20,6 +20,8 @@ class modelView{
 		"usuarios",
 		"salir",
 		"inventariomap",
+		"usuarioinfo",
+		"buscar",
 		"passwordreset"];
 		if(in_array($view,$rutesarray)){
 			return "./view/modulos/".$view."_view.php";

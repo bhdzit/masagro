@@ -1,8 +1,8 @@
 <?php
 
-
 class db{
 
+	public static $mysqlLastInsertion=1;
 	protected function dbConnection(){
 		$mysqlconn= new mysqli("127.0.0.1", "bhdz", "IT25697", "masagro");
 		return $mysqlconn;
@@ -30,6 +30,15 @@ class db{
 	}
 	protected function executeQuery($sql){
 		$mysqli = self::dbConnection(); 
-		return $mysqli->query($sql);
+//		=$mysqli;
+		$bool=$mysqli->query($sql);
+
+		 self::$mysqlLastInsertion= $mysqli->insert_id;
+	 	//echo $mysqli->insert_id;
+		return $bool;
+	}
+	protected function getLastInsertionID(){
+		//var_dump(self::$mysqlLastInsertion);
+		return self::$mysqlLastInsertion;
 	}
 }
