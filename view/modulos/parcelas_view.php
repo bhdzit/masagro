@@ -37,7 +37,7 @@
 					    <div class="input-group-prepend">
 					       <span class="input-group-text ti-user "><i class="fas fa-fingerprint"></i></span>
 					    </div>
-					<input id="parce_id" type="text" class="form-control "  name="ID">
+					<input id="parce_id" type="text" class="form-control "  name="ID" value="##" readonly>
 				</div>
 
 	<div class="input-group mb-3 input-group-sm form-group col-4">

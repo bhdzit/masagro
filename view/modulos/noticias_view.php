@@ -26,10 +26,34 @@
 
 
                     <div class="carousel-item">
-                      <img class="d-block img-fluid" src="view/img/slider2.png" alt="Second slide">
+                        <div class="card m-5">
+                        <div class="card-body">
+                          <h4 class="card-title">México y Estados Unidos buscan generar sistemas agroalimentarios resilientes</h4>
+                          <h6 class="card-subtitle mb-2 text-muted">Texcoco, Estado de México.</h6>
+                          <p class="card-text">
+                             <img src="https://www.gob.mx/cms/uploads/press/main_image/173600/post_191111_SADER_CIMMYT_M_XICO_ESTADOS_UNIDOS-1.JPG" style="margin: 8px;
+                      float: right;">
+                        El Centro Internacional de Mejoramiento de Maíz y Trigo (CIMMYT) recibió la visita de los subsecretarios de Comercio y Asuntos Agrícolas Extranjeros de Estados Unidos (USDA), Ted McKinney, y de Agricultura de la Secretaría de Agricultura y Desarrollo Rural, Miguel García Winder, así como de representantes de secretarías estatales del ramo en Estados Unidos.
+                             
+                        El objetivo del encuentro fue establecer un diálogo para identificar líneas de cooperación entre México, Estados Unidos y el CIMMYT para enfrentar tres desafíos convergentes que impactan la producción agrícola: el cambio climático, el crecimiento demográfico y los recursos naturales limitados.
+                          </p>
+                        </div>
+                      </div>
                     </div>
                     <div class="carousel-item">
-                      <img class="d-block img-fluid" src="view/img/slider3.png" alt="Third slide">
+                <div class="card m-5">
+                        <div class="card-body">
+                          <h4 class="card-title">México y Estados Unidos buscan generar sistemas agroalimentarios resilientes</h4>
+                          <h6 class="card-subtitle mb-2 text-muted">Texcoco, Estado de México.</h6>
+                          <p class="card-text">
+                             <img src="https://www.gob.mx/cms/uploads/press/main_image/173600/post_191111_SADER_CIMMYT_M_XICO_ESTADOS_UNIDOS-1.JPG" style="margin: 8px;
+                      float: right;">
+                        El Centro Internacional de Mejoramiento de Maíz y Trigo (CIMMYT) recibió la visita de los subsecretarios de Comercio y Asuntos Agrícolas Extranjeros de Estados Unidos (USDA), Ted McKinney, y de Agricultura de la Secretaría de Agricultura y Desarrollo Rural, Miguel García Winder, así como de representantes de secretarías estatales del ramo en Estados Unidos.
+                             
+                        El objetivo del encuentro fue establecer un diálogo para identificar líneas de cooperación entre México, Estados Unidos y el CIMMYT para enfrentar tres desafíos convergentes que impactan la producción agrícola: el cambio climático, el crecimiento demográfico y los recursos naturales limitados.
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

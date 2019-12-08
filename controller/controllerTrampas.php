@@ -45,5 +45,10 @@ class controllerTrampas{
 			# code...
 		}
 	}
+	public function getSelectedTramp($id){
+		$model= new modelSetTramp();
+		$res=$model->getSelectedTramp($id);
+	
+	}
 }
 ?>

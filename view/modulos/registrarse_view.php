@@ -14,7 +14,7 @@
 					    <div class="input-group-prepend">
 					       <span class="input-group-text ti-user "><i class="fas fa-building"></i></span>
 					    </div>
-					<input required="" minlength="12" maxlength="12" type="text" class="form-control " placeholder="RFC" name="rfc">
+					<input required="" minlength="12" maxlength="13" type="text" class="form-control " placeholder="RFC" name="rfc">
 				</div>
 				</div>
 
@@ -203,7 +203,8 @@
 
 		})
 		.done(function(res){
-			alert(res)
+			alert(res);
+			console.log(res);
 		});
 	}
 	else{

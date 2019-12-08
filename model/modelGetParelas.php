@@ -25,7 +25,7 @@ require("../core/db.php");
 		}
 		public function getParceProduReport($id){
 			$db=new db;
-			$res=db::executeQuery("select * from `ma_parcelas` inner join `ma_user_info` on ma_user_id=ma_parce_prod_id and ma_user_id=2;");
+			$res=db::executeQuery("select * from `ma_parcelas` inner join `ma_user_info` on ma_user_id=ma_parce_prod_id and ma_user_id=".$id.";");
 			return $res;
 		}
 

@@ -108,6 +108,7 @@
    // Get the default map types from the Platform object:
 var defaultLayers = platform.createDefaultLayers();
 
+
 //Step 2: initialize a map - this map is centered over Europe
 var map = new H.Map(document.getElementById('mapContainer'),
   defaultLayers.vector.normal.map,{
@@ -115,8 +116,13 @@ var map = new H.Map(document.getElementById('mapContainer'),
   zoom: 4,
   pixelRatio: window.devicePixelRatio || 1
 });
+
 // Add event listener:
-map.addEventListener('tap', function(evt) {
+map.addEventListener('tap', getCords);
+
+
+function getCords(evt){
+
     var coord = map.screenToGeo(evt.currentPointer.viewportX,
             evt.currentPointer.viewportY);
 
@@ -128,11 +134,13 @@ map.addEventListener('tap', function(evt) {
     addMarck({lat:coord.lat,lng:coord.lng});
     $("#tramp_lat").val(coord.lat);
     $("#tramp_lng").val(coord.lng);
-});
+}
+
+
 function addMarck(cords){
   var icon = new H.map.Icon(mapmarck);
   marker = new H.map.Marker(cords, {icon: icon});
-
+  map.removeEventListener("tap",getCords);
 // Add the marker to the map and center the map at the location of the marker:
 map.addObject(marker);
 //addPolygonToMap();

@@ -32,16 +32,18 @@ require("../model/modelGetParelas.php");
 		public function getParcelasReport($id){
 			$model=new modelGetParcelas();
 			if($id=="*"){
-			$res=$model->getParcelasReport();
-
+				echo "adasd";
+				$res=$model->getParcelasReport();
+				//var_dump($res);	
 			}
 			else{
 			$res=$model->getParceProduReport($id);
 			//var_dump($res);
 			}
-
+#var_dump($res);
 			while ($parcela=$res->fetch_assoc()) {
-				echo $parcela["ma_parce_id"].",".$parcela["ma_parce_name"].",".$parcela["ma_usu_business_name"].",".$parcela["ma_parce_surface"].";";
+		
+		echo $parcela["ma_parce_id"].",".$parcela["ma_parce_name"].",".$parcela["ma_usu_business_name"].",".$parcela["ma_parce_surface"].";";
 			//	var_dump($parcela);
 			}
 		}

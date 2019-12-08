@@ -44,11 +44,13 @@
    data:{"id":id},
    type:"GET"
    }).done(function(res){
-   // alert(res);
-    if(res!=""){
+ 
+ var html="";
+   
+if(res!=""){
+
     res=res.substring(0,res.length-1).split(";");
  
-    var html="";
     for(var i=0;i<res.length;i++){
          var tramp=res[i].split(",");
       html+="<tr>"
@@ -62,10 +64,15 @@
           +"</tr>";
 
     }
-    $("#tbodyTramp").html(html);
-   }else{
-    $("#tbodyTramp").html("");
-   }
+
+    
+    }
+    else{
+
+      html="<tr>No hay datos que demostrar</tr>";
+    }
+       $("#tbodyTramp").html(html);
+
    }); 
 
   }

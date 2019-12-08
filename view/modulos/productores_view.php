@@ -1,20 +1,8 @@
  <section class="agromas_menu col-10 table-responsive">
                <center>
-                <h1>Productores<i onclick="getPDF" class="ml-5 fas fa-file-pdf"></i></h1>
-        <table class="table table-striped"   border="1" style="background: #fff;">
-          <thead class="thead-dark">
-            <tr>
-                <th>RFC</th>
-                <th>Razón Social</th>
-                <th>Representante</th>
-                <th>Email</th>
-                <th>Teléfono</th>
-                <th>No. Trampas</th>
-                
-            </tr>
-            </thead>
-
-             <tbody>
+                <h1  id="titulo">Productores<i onclick="getPDF()" class="ml-5 fas fa-file-pdf"></i></h1>
+        <table  id="tablereport" class="table table-striped"   border="1" style="background: #fff;">
+<thead class="thead-dark"><tr><th>RFC</th><th>Razón Social</th><th>Representante</th><th>Email</th><th>Teléfono</th><th>No. Trampas</th></tr></thead><tbody>
 
     
             <?php
@@ -45,6 +33,28 @@
  </section>  
  <script type="text/javascript">
      function getPDF(){
+      var text=$("#tablereport").html();
+text=text.replace("<th>Eliminar</th>","");
+text=text.replace("\n","");
+text=text.replace("<td><i class=\"fas fa-trash\"></i></td>"," ")
+ 
+      var xhr = new XMLHttpRequest();
+      xhr.open('get', "./ajax/genPDF.php?titulo="+$("#titulo").text()+"&data="+text, true);
+      xhr.responseType = 'blob';
+      xhr.onload = function(e) {
+
+        if (this.status == 200) {
+
+          var blob = new Blob([this.response], {type: 'application/pdf'});
+          var link = document.createElement('a');
+          link.href = window.URL.createObjectURL(blob);
+          link.download = "report.pdf";
+          link.click();
+        }
+      };
+
+      xhr.send();
+
 
      }
  </script>

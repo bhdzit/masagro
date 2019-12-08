@@ -49,6 +49,12 @@ $res=db::executeQuery(" select ma_tramp_id,ma_tram_status, ma_tramp_date,ST_X( m
 			return $res;
 	
 		}
+				public function getSelectedTramp($id){
+			$db=new db();
+			$sql="select *,ST_Y(ma_tramp_point), ST_X(ma_tramp_point) from ma_tramp  where ma_tramp_id=".$id.";";
+			$res=db::executeQuery($sql);
+			return $res;
+		}
 
 }
 ?>

@@ -49,7 +49,7 @@ $res=$controller->getProductorInfo($item[1]);
                     <div class="input-group col-auto mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-location-arrow"></i></span>
-                        </div><input type="mail"  readonly=""  name="prod_mail"  class="form-control"  placeholder="email">
+                        </div><input type="mail"  readonly=""  name="prod_mail"  class="form-control"  placeholder="email" value=<?php echo $res["ma_usu_mail"];?>>
                     </div>
 
 

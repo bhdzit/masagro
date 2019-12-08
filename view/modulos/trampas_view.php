@@ -78,7 +78,7 @@
                   </div>
                     <div class="form-row">
                     <div class="input-group mb-3 input-group-sm form-group col-6">
-                     <button class="btn btn-block btn-warning">Reoporte</button>
+                     <button href="reportetrampa" class="btn btn-block btn-warning" onclick="setReporte()">Reoporte</button>
                    </div>
                      <div class="input-group mb-3 input-group-sm form-group col-6">
                      <button class="btn btn-block btn-warning">Desisntalar</button>
@@ -139,6 +139,7 @@ $.ajax({
   for(var i=0;i<res.length;i++){
     trampas=res[i].split(",");
   //  alert(trampas[3]);
+   
     addMarck({lat:trampas[3],lng:trampas[2]},trampas);
   }
   });
@@ -165,7 +166,16 @@ function getSelecteProd(){
 }
 
 getTramps("*");
-
-
+ 
+          function setReporte(){
+      //alert("redirecionamiento");
+      //alert($("#tramp_id").val());
+      if($("#tramp_id").val()==""){
+        alert("No has selecionado Trampa");
+      }else{
+     window.location.href="reportetrampa/"+$("#tramp_id").val();
+      }
+    }
+ 
 
   </script>

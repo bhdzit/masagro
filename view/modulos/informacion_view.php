@@ -12,7 +12,7 @@ $res=$controller->getInformation();
 				<form id="infoForm" name="infoForm" class="form-productores m-0 p-5" action="./ajax/updateInfo.php" onsubmit="return false;" method="post"  >
 		
 					<br>
-                    <input hidden="" type="" name="id_info" value="<?php echo $res["ma_user_id"]?>">
+                    <input  hidden type="" name="info_id" value="<?php echo $res["ma_user_id"]?>">
                     <div class="input-group col-auto mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-building"></i></span>
@@ -30,7 +30,7 @@ $res=$controller->getInformation();
                     <div class="input-group col-auto mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-location-arrow"></i></span>
-                        </div><input type="text" name="info_location" readonly=""  value="<?php echo $res["em_ubicacion"]?>"  class="form-control"  placeholder="Direccion">
+                        </div><input type="text" name="info_mail" readonly=""  value="<?php echo $res["ma_usu_mail"];?>"  class="form-control"  placeholder="Correo">
                     </div>
 
 

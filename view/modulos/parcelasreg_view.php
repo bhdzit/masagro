@@ -10,7 +10,7 @@
 							     <div class="input-group-prepend">
 							       <span class="input-group-text ti-user "><i class="fas fa-fingerprint"></i></span>
 							    </div>
-					      <input type="text" class="form-control " id="ma_par_id" placeholder="ID">
+					      <input readonly type="text" class="form-control " id="ma_par_id" placeholder="ID" value="##">
 					   </div>
 
 					   	<div class="input-group mb-3 input-group-sm form-group col-6">
@@ -104,7 +104,7 @@
 			   </div>
 
 			   	<div class="input-group mb-3 input-group-sm form-group col-2">
-					<button id="btnCancelar"  class="btn-block" onclick="evtancelbtn()">Cancelar</button>	  
+					<a  href="parcelas" class=" btn btn-block btn-warning" > Cancelar</a>	  
 			   </div>
 			</div>
 		</form>
